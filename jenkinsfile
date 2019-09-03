@@ -1,8 +1,8 @@
-node('UBUNTU'){
+node('UBUNTU') {
     stage('GIT') {
         git 'https://https://github.com/saipranay54/repo.git'
     }
-    stage('package'){
+    stage('package') {
         sh 'mvn package'
     }
 }
